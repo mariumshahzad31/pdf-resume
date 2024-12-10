@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder by Marium</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Resume Builder by Marium</h1>
+        </header>
+        <main>
+            <form id="resumeForm">
+                <section>
+                    <h2>Personal Information</h2>
+                    <div class="input-group">
+                        <label for="username">Resume URL (Username):</label>
+                        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="profilePhoto">Profile Photo:</label>
+                        <input type="file" id="profilePhoto" name="profilePhoto" accept="image/*" required>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Education</h2>
+                    <div class="input-group">
+                        <label for="education">Education:</label>
+                        <textarea id="education" name="education" rows="4" placeholder="Describe your education" required></textarea>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Experience</h2>
+                    <div class="input-group">
+                        <label for="experience">Experience:</label>
+                        <textarea id="experience" name="experience" rows="4" placeholder="Describe your work experience" required></textarea>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Skills</h2>
+                    <div class="input-group">
+                        <label for="skills">Skills:</label>
+                        <textarea id="skills" name="skills" rows="4" placeholder="List your skills" required></textarea>
+                    </div>
+                </section>
+
+                <button type="submit" class="submit-btn">Create Resume</button>
+            </form>
+        </main>
+        <footer>
+            <p>&copy; 2024 Resume Builder by Marium</p>
+        </footer>
+    </div>
+    <div id="resumeOutput"></div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
